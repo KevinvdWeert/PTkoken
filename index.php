@@ -1,11 +1,11 @@
 <?php
 // Configuratiegegevens
 $chef_naam = "Pablo Torenbeek";
-$telefoon = "+31 6 12345678";
+$telefoon = "0644115183";
 $email = "pablo@ptkoken.nl";
-$btw_nummer = "NL123456789B01";
-$kvk_nummer = "12345678";
-$adres = "Keukenstraat 123, 1011 AA Amsterdam";
+$btw_nummer = "NL004790057B46";
+$kvk_nummer = "90124219";
+$adres = "pablo.ptkoken.nl";
 ?>
 
 <!DOCTYPE html>
@@ -35,20 +35,24 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <!-- Gebruik verbeterde CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navigatie -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">PTkoken</a>
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="assets/img/logo.png" alt="PTkoken logo" style="height:38px;width:auto;margin-right:12px;display:inline-block;">
+                PTkoken
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#over-mij">Over Mij</a>
@@ -68,12 +72,16 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
     </nav>
 
     <!-- Hero Sectie -->
-    <header id="home" class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">PTkoken</h1>
-                <p class="hero-subtitle">Freelance Chef & Culinaire Expert</p>
-                <a href="#contact" class="btn btn-primary btn-hero">Neem contact op</a>
+    <header id="home" class="hero-section hero-slideshow">
+        <div class="hero-overlay"></div>
+        <div class="container hero-center-content">
+            <div class="hero-content hero-slideshow-content">
+                <div class="hero-topline">
+                    <span class="hero-topline-text">CULINAIR MEESTERSCHAP OP LOCATIE</span>
+                </div>
+                <h1 class="hero-title">Pablo Torenbeek</h1>
+                <p class="hero-subtitle">Freelance Chef & Culinaire kwaliteit</p>
+                <a href="#contact" class="btn btn-hero">Neem contact op</a>
             </div>
         </div>
     </header>
@@ -85,16 +93,13 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img-container">
-                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pablo Torenbeek - Freelance Chef" class="img-fluid about-img">
+                        <img src="assets/img/pfp.jpeg" alt="Pablo Torenbeek - Freelance Chef" class="img-fluid about-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
                         <h3>Mijn naam is Pablo Torenbeek</h3>
                         <p>Met ruim 20 jaar ervaring als chef in binnen- én buitenland zet ik mijn passie en vakmanschap in voor uiteenlopende culinaire opdrachten. Of het nu gaat om het versterken van een keukenteam, het draaien van een drukke service of het neerzetten van een volledig privé diner; ik zorg voor kwaliteit en professionaliteit.</p>
-                        <div class="signature">
-                            <img src="https://signaturely.com/wp-content/uploads/2020/06/free-signature.svg" alt="Handtekening Pablo Torenbeek" class="img-fluid">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +157,7 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
             </div>
             
             <div class="text-center mt-4">
-                <p class="note">Bovenstaande tarieven zijn excl. kilometervergoeding</p>
+                <p class="note">Bovenstaande tarieven zijn excl. Reiskosten</p>
             </div>
         </div>
     </section>
@@ -175,7 +180,7 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
                     <div class="row">
                         <div class="col-md-6 mb-4">
                             <div class="card service-card h-100">
-                                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Privé diner">
+                                <img src="assets/img/prive-diner.jpeg" class="card-img-top" alt="Privé diner">
                                 <div class="card-body">
                                     <h3 class="card-title">Privé Diner</h3>
                                     <p class="card-text">Exclusieve culinaire ervaring bij u thuis</p>
@@ -185,7 +190,7 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
                         
                         <div class="col-md-6 mb-4">
                             <div class="card service-card h-100">
-                                <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Catering">
+                                <img src="assets/img/catering.jpeg" class="card-img-top" alt="Catering">
                                 <div class="card-body">
                                     <h3 class="card-title">Catering</h3>
                                     <p class="card-text">Op maat gemaakte culinaire oplossingen</p>
@@ -222,7 +227,6 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
                                 <li><i class="fas fa-user"></i> <?php echo $chef_naam; ?></li>
                                 <li><i class="fas fa-phone"></i> <?php echo $telefoon; ?></li>
                                 <li><i class="fas fa-envelope"></i> <?php echo $email; ?></li>
-                                <li><i class="fas fa-map-marker-alt"></i> <?php echo $adres; ?></li>
                                 <li><i class="fas fa-file-invoice"></i> BTW-nummer: <?php echo $btw_nummer; ?></li>
                                 <li><i class="fas fa-building"></i> KVK-nummer: <?php echo $kvk_nummer; ?></li>
                             </ul>
@@ -276,17 +280,49 @@ $adres = "Keukenstraat 123, 1011 AA Amsterdam";
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
-        // Navbar scroll effect
+        // Hero slideshow
+        const heroImages = [
+            'assets/img/hero1.jpeg',
+            'assets/img/hero2.jpeg',
+            'assets/img/hero3.jpeg',
+            'assets/img/hero4.jpeg'
+        ];
+        let heroIndex = 0;
+        const heroSection = document.querySelector('.hero-slideshow');
+
+        function setHeroBg(idx) {
+            heroSection.style.backgroundImage = `url('${heroImages[idx]}')`;
+        }
+        setHeroBg(heroIndex);
+
+        setInterval(() => {
+            heroSection.classList.add('fade');
+            setTimeout(() => {
+                heroIndex = (heroIndex + 1) % heroImages.length;
+                setHeroBg(heroIndex);
+                heroSection.classList.remove('fade');
+            }, 1000); // match with CSS transition duration
+        }, 5000);
+
+        // Navbar scroll effect (vervang oude code)
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.querySelector('.navbar').style.padding = '10px 0';
-                document.querySelector('.navbar').style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                document.querySelector('.navbar').style.padding = '15px 0';
-                document.querySelector('.navbar').style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             }
+        });
+
+        // Navbar active link effect
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
         });
 
         // Form submission
